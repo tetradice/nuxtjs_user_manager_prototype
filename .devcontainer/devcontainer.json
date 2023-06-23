@@ -10,8 +10,13 @@
   // ※docker-compose.yml 側でマウントしたディレクトリパスと揃える必要がある
   "workspaceFolder": "/workspace",
 
-  // nodeユーザー (非rootユーザー) で実行
+  // 一般ユーザー (非rootユーザー) で実行
   "remoteUser": "node",
+
+  // 名前付きボリュームにマウントしたディレクトリは、初期作成時の所有者がrootとなっており、一般ユーザーが書き込みできないため
+  // 所有者をnodeユーザーに変更する
+  // from <https://code.visualstudio.com/remote/advancedcontainers/improve-performance>
+  "postCreateCommand": "sudo chown node node_modules .pnpm-store",
 
   // 開発コンテナにインストールする拡張機能の設定
   "customizations": {
