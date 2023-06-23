@@ -11,5 +11,12 @@
   "workspaceFolder": "/workspace",
 
   // nodeユーザー (非rootユーザー) で実行
-  "remoteUser": "node"
+  "remoteUser": "node",
+
+  // 開発コンテナにインストールする拡張機能の設定
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker", "esbenp.prettier-vscode"]
+    }
+  }
 }
