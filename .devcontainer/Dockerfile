@@ -13,6 +13,7 @@ RUN apt-get update && \
 RUN npm install -g pnpm
 
 # 一般ユーザーを作成し、sudoを許可
+# from <https://github.com/csutter/devcontainer-templates>
 ARG USERNAME=node
 RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
