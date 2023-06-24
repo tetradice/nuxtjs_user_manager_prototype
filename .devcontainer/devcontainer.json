@@ -24,7 +24,9 @@
       "extensions": [
 		"ms-azuretools.vscode-docker",
 		"esbenp.prettier-vscode",
-		"ShaneLiesegang.vscode-simple-icons-rev"
+		"ShaneLiesegang.vscode-simple-icons-rev",
+		"Vue.volar",
+		"Vue.vscode-typescript-vue-plugin"
 	]
     }
   }
