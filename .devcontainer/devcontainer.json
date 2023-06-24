@@ -21,7 +21,11 @@
   // 開発コンテナにインストールする拡張機能の設定
   "customizations": {
     "vscode": {
-      "extensions": ["ms-azuretools.vscode-docker", "esbenp.prettier-vscode"]
+      "extensions": [
+		"ms-azuretools.vscode-docker",
+		"esbenp.prettier-vscode",
+		"ShaneLiesegang.vscode-simple-icons-rev"
+	]
     }
   }
 }
