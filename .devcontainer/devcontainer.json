@@ -22,12 +22,13 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-azuretools.vscode-docker",
-        "esbenp.prettier-vscode",
-        "ShaneLiesegang.vscode-simple-icons-rev",
-        "Vue.volar",
-        "Vue.vscode-typescript-vue-plugin"
-      ]
+		"ms-azuretools.vscode-docker",
+		"esbenp.prettier-vscode",
+		"ShaneLiesegang.vscode-simple-icons-rev",
+		"Vue.volar",
+		"Vue.vscode-typescript-vue-plugin",
+		"Prisma.prisma"
+	]
     }
   }
 }
