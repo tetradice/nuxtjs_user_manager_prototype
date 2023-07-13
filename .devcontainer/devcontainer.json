@@ -16,7 +16,7 @@
   // 名前付きボリュームにマウントしたディレクトリは、初期作成時の所有者がrootとなっており、一般ユーザーが書き込みできないため
   // 所有者をnodeユーザーに変更する
   // from <https://code.visualstudio.com/remote/advancedcontainers/improve-performance>
-  "postCreateCommand": "sudo chown node node_modules .pnpm-store",
+  "postCreateCommand": "sudo chown node node_modules web/node_modules .pnpm-store",
 
   // 開発コンテナにインストールする拡張機能の設定
   "customizations": {
