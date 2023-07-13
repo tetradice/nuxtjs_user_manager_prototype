@@ -6,6 +6,25 @@ settings:
 
 importers:
 
+  .:
+    dependencies:
+      '@prisma/client':
+        specifier: ^5.0.0
+        version: 5.0.0(prisma@5.0.0)
+      prisma:
+        specifier: ^5.0.0
+        version: 5.0.0
+    devDependencies:
+      '@nuxt/devtools':
+        specifier: latest
+        version: 0.6.7(nuxt@3.6.2)(vite@4.4.3)
+      '@types/node':
+        specifier: ^18.16.19
+        version: 18.16.19
+      nuxt:
+        specifier: ^3.6.2
+        version: 3.6.2(@types/node@18.16.19)
+
   web:
     dependencies:
       '@prisma/client':
@@ -1145,6 +1164,7 @@ packages:
       - '@types/node'
       - eslint
       - less
+      - lightningcss
       - meow
       - optionator
       - rollup
@@ -4495,6 +4515,7 @@ packages:
       - encoding
       - eslint
       - less
+      - lightningcss
       - meow
       - optionator
       - rollup
@@ -6073,10 +6094,11 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.3.9(@types/node@18.16.19)
+      vite: 4.4.3(@types/node@18.16.19)
     transitivePeerDependencies:
       - '@types/node'
       - less
+      - lightningcss
       - sass
       - stylus
       - sugarss

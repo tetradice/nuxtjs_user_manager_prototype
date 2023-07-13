@@ -12,7 +12,6 @@ services:
       # (/workspace がVisual Studio Codeが開くディレクトリとなる）
       - ..:/workspace:cached
       - root_node_modules:/workspace/node_modules
-      - web_node_modules:/workspace/web/node_modules
       - pnpm_store:/workspace/.pnpm-store
 
     # コンテナが自動終了しないようにする
@@ -43,6 +42,5 @@ services:
 volumes:
   # 名前付きボリュームを定義
   root_node_modules:
-  web_node_modules:
   pnpm_store:
   postgres-data:
