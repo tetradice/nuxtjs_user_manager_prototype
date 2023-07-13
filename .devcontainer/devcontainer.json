@@ -2,9 +2,9 @@
 {
   "name": "NodeJS DevContainer Starter",
 
-  // docker-compose.yml の設定を元にコンテナを立ち上げ、「web」サービスにログイン
+  // docker-compose.yml の設定を元にコンテナを立ち上げ、「dev」サービスにログイン
   "dockerComposeFile": "docker-compose.yml",
-  "service": "web",
+  "service": "dev",
 
   // コンテナ接続時にVisual Studio Codeが開く、コンテナ内のディレクトリパス
   // ※docker-compose.yml 側でマウントしたディレクトリパスと揃える必要がある
@@ -22,12 +22,12 @@
   "customizations": {
     "vscode": {
       "extensions": [
-		"ms-azuretools.vscode-docker",
-		"esbenp.prettier-vscode",
-		"ShaneLiesegang.vscode-simple-icons-rev",
-		"Vue.volar",
-		"Vue.vscode-typescript-vue-plugin"
-	]
+        "ms-azuretools.vscode-docker",
+        "esbenp.prettier-vscode",
+        "ShaneLiesegang.vscode-simple-icons-rev",
+        "Vue.volar",
+        "Vue.vscode-typescript-vue-plugin"
+      ]
     }
   }
 }
