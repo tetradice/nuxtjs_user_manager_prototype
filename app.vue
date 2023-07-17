@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
-const allBooks = await prisma.books.findMany();
+const allBooks = await prisma.user.findMany();
 </script>
 <template>
   <div>
