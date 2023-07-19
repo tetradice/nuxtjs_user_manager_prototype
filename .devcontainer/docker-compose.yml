@@ -13,6 +13,7 @@ services:
       - ..:/workspace:cached
       - root_node_modules:/workspace/node_modules
       - pnpm_store:/workspace/.pnpm-store
+      - nuxt:/workspace/.nuxt
 
     # コンテナが自動終了しないようにする
     command: sleep infinity
@@ -55,4 +56,5 @@ volumes:
   # 名前付きボリュームを定義
   root_node_modules:
   pnpm_store:
+  nuxt:
   postgres-data:
