@@ -1,11 +1,10 @@
 <script setup lang="ts">
 const { $client } = useNuxtApp();
 
-const { data: hello } = await $client.hello.useQuery({ text: "client" });
+const { data: hello } = await $client.hello.useQuery({ text: "client2" });
 </script>
 <template>
   <div>
-    <nuxt-link to="/page2"> Go to Next</nuxt-link>
     {{ hello }}
     <v-table>
       <thead>
