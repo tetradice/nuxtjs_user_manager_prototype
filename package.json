@@ -6,25 +6,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "typecheck": "nuxt typecheck",
-    "postinstall": "prisma generate && nuxt prepare"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
     "@nuxt/devtools": "latest",
     "@prisma/client": "^5.0.0",
     "@sidebase/nuxt-auth": "0.6.0-beta.3",
-    "@trpc/client": "^10.34.0",
-    "@trpc/server": "^10.34.0",
     "@types/node": "^18.16.19",
     "nuxt": "^3.6.2",
     "prisma": "^5.0.0",
     "sass": "^1.63.6",
-    "trpc-nuxt": "^0.10.6",
-    "typescript": "^5.1.6",
     "vite-plugin-vuetify": "^1.0.2",
-    "vue-tsc": "^1.8.5",
-    "vuetify": "^3.3.9",
-    "zod": "^3.21.4"
+    "vuetify": "^3.3.9"
   }
 }

@@ -1,15 +1,7 @@
-<script setup lang="ts">
-const { $client } = useNuxtApp();
-
-const helloQueryEnabled = ref(false);
-const { data: helloQueryData } = await $client.hello.useQuery({
-  text: "client",
-});
-</script>
+<script setup lang="ts"></script>
 <template>
   <div>
-    table!!!!!
-    <p>{{ helloQueryData?.greeting }}</p>
+    table!!!!
     <v-table>
       <thead>
         <tr>
@@ -30,6 +22,7 @@ const { data: helloQueryData } = await $client.hello.useQuery({
         </tr>
       </tbody>
     </v-table>
+    Hello, Nuxt.js
     <NuxtWelcome />
   </div>
 </template>
