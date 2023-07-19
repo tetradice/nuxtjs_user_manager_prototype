@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     "@mdi/font/css/materialdesignicons.min.css", // for mdi 7.x
   ],
   build: {
-    transpile: ["vuetify"],
+    transpile: ["trpc-nuxt", "vuetify"],
   },
 
   // ブラウザのdevtoolsを有効化
