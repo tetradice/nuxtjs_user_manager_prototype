@@ -24,6 +24,9 @@ importers:
       '@types/node':
         specifier: ^18.16.19
         version: 18.16.19
+      mdi:
+        specifier: ^2.2.43
+        version: 2.2.43
       nuxt:
         specifier: ^3.6.2
         version: 3.6.2(@types/node@18.16.19)(sass@1.63.6)
@@ -4221,6 +4224,11 @@ packages:
       ssri: 10.0.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /mdi@2.2.43:
+    resolution: {integrity: sha512-g3m6z4303qieltUM20JL2gdsJZvoVzIzO74qa2XxZ2kg9JPwrPEAgooVhRDHZi1vvRh0gB8Dg+c9XqNdz4jcIg==}
+    deprecated: The mdi package was renamed to @mdi/font after v2.2.43. Please rename in your package.json for future updates.
     dev: true
 
   /mdn-data@2.0.28:

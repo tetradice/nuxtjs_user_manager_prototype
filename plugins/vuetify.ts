@@ -1,14 +1,15 @@
-// from <https://zenn.dev/coedo/articles/nuxt3-vuetify3>
+// from <https://zenn.dev/one_dock/articles/ab6d178741956d>
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
-    ssr: true,
     components,
     directives,
-    // 他の設定をここに記述していく
+
+    // from <https://vuetifyjs.com/en/getting-started/installation/#ssr>
+    ssr: true,
   });
 
   // Vue.js で Vuetify を使用する
