@@ -17,6 +17,18 @@ services:
     # コンテナが自動終了しないようにする
     command: sleep infinity
 
+    # 環境変数
+    environment:
+      # DevcontainerでもNuxt.jsのHot Reloadを有効にする
+      # from <https://www.ikkitang1211.site/entry/2020/10/11/213824>
+      CHOKIDAR_USEPOLLING: true
+
+      # 全IPアドレスで公開するように設定（Nuxt.jsなどの開発時に必要）
+      HOST: 0.0.0.0
+
+      # Nuxt.jsで使用するポート番号を指定
+      PORT: 45672
+
   # DBサービス（コンテナ）
   # from <https://github.com/devcontainers/templates/tree/main/src/javascript-node-postgres>
   db:

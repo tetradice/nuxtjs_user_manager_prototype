@@ -1,12 +1,6 @@
-<script setup lang="ts">
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
-const allBooks = await prisma.user.findMany();
-</script>
 <template>
   <div>
-    Hello, Nuxt.js
-    <NuxtWelcome />
+    <!-- Markup shared across all pages, ex: NavBar -->
+    <NuxtPage />
   </div>
 </template>

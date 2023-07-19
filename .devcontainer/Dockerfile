@@ -18,11 +18,8 @@ ARG USERNAME=node
 RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
-# ここからは一般ユーザーで実行
+# これ以降のコマンドは一般ユーザーで実行
 USER node
 
-# 環境変数HOSTを、全IPアドレスで公開するように設定（Next.js, Nuxt.jsなどの開発時に必要）
-ENV HOST=0.0.0.0
+# （一般ユーザーで実行するコマンドがあればここに記載）
 
-# 環境変数PORTに使用するポート番号を指定
-ENV PORT=45672
