@@ -20,12 +20,6 @@ importers:
       '@sidebase/nuxt-auth':
         specifier: 0.6.0-beta.3
         version: 0.6.0-beta.3(next-auth@4.22.3)(vue@3.3.4)
-      '@trpc/client':
-        specifier: ^10.34.0
-        version: 10.34.0(@trpc/server@10.34.0)
-      '@trpc/server':
-        specifier: ^10.34.0
-        version: 10.34.0
       '@types/node':
         specifier: ^18.16.19
         version: 18.16.19
@@ -38,9 +32,6 @@ importers:
       sass:
         specifier: ^1.63.6
         version: 1.63.6
-      trpc-nuxt:
-        specifier: ^0.10.6
-        version: 0.10.6(@trpc/client@10.34.0)(@trpc/server@10.34.0)
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
@@ -53,9 +44,6 @@ importers:
       vuetify:
         specifier: ^3.3.9
         version: 3.3.9(typescript@5.1.6)(vite-plugin-vuetify@1.0.2)(vue@3.3.4)
-      zod:
-        specifier: ^3.21.4
-        version: 3.21.4
 
   web:
     dependencies:
@@ -1868,18 +1856,6 @@ packages:
   /@tootallnate/once@2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
-
-  /@trpc/client@10.34.0(@trpc/server@10.34.0):
-    resolution: {integrity: sha512-nqtDTIqSY/9syo2EjSy4WWWXPU9GsamEh9Tsg698gLAh1nhgFc5+/YYeb+Ne1pbvWGZ5/3t9Dcz3h4wMyyJ9gQ==}
-    peerDependencies:
-      '@trpc/server': 10.34.0
-    dependencies:
-      '@trpc/server': 10.34.0
-    dev: false
-
-  /@trpc/server@10.34.0:
-    resolution: {integrity: sha512-2VMW44Fpaoyqb50dBtzdSWMhqt8lmoJiocEyBBeDb03R0W+XrzbVD5kU/wqKPlcp1DWeNCkOEIMtetMZCfo1hA==}
-    dev: false
 
   /@trysound/sax@0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -6297,20 +6273,6 @@ packages:
 
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
-
-  /trpc-nuxt@0.10.6(@trpc/client@10.34.0)(@trpc/server@10.34.0):
-    resolution: {integrity: sha512-d1eaHtra3rE2TnwvenyrLqRQZkV3/bILji8pYnodVIODbpdEpx2cibDMkhW3y6+fnP2fWvV/MufB2oUSLBzzEw==}
-    peerDependencies:
-      '@trpc/client': ^10.26.0
-      '@trpc/server': ^10.26.0
-    dependencies:
-      '@trpc/client': 10.34.0(@trpc/server@10.34.0)
-      '@trpc/server': 10.34.0
-      h3: 1.7.1
-      ofetch: 1.1.1
-      ohash: 1.1.2
-      ufo: 1.1.2
-    dev: false
 
   /tslib@2.6.0:
     resolution: {integrity: sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==}

@@ -1,8 +1,4 @@
-<script setup lang="ts">
-const { $client } = useNuxtApp();
-
-const { data: hello } = $client.hello.useQuery({ text: "client" });
-</script>
+<script setup lang="ts"></script>
 <template>
   <div>
     table!!!!
