@@ -9,8 +9,14 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y git sudo
 
+# npmを最新版にアップグレードする（最新版でないと警告が出るため）
+RUN npm install -g npm
+
 # pnpmをインストール
 RUN npm install -g pnpm
+
+# niをインストール
+RUN npm install -g ni
 
 # 一般ユーザーを作成し、sudoを許可
 # from <https://github.com/csutter/devcontainer-templates>
@@ -22,4 +28,3 @@ RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
 USER node
 
 # （一般ユーザーで実行するコマンドがあればここに記載）
-
