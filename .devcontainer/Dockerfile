@@ -16,7 +16,7 @@ RUN npm install -g npm
 RUN npm install -g pnpm
 
 # niをインストール
-RUN npm install -g ni
+RUN npm install -g @antfu/ni
 
 # 一般ユーザーを作成し、sudoを許可
 # from <https://github.com/csutter/devcontainer-templates>
