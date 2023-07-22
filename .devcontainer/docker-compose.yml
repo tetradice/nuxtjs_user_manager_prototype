@@ -30,6 +30,9 @@ services:
       # Nuxt.jsで使用するポート番号を指定
       PORT: 45672
 
+      # DB接続設定（Prismaで使用）
+      DATABASE_URL: "postgresql://postgres:postgres@db:5432/postgres?schema=public"
+
   # DBサービス（コンテナ）
   # from <https://github.com/devcontainers/templates/tree/main/src/javascript-node-postgres>
   db:
